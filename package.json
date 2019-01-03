@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "cmdtest",
-    "start": "nodemon server.js"
+    "start": "nodemon server.js",
+    "stop": "pkill --signal SIGINT myApp"
   },
   "repository": {
     "type": "git",
