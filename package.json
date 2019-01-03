@@ -1,0 +1,26 @@
+{
+  "name": "ml_test",
+  "version": "1.0.0",
+  "description": "Test ML Morse<->Human",
+  "main": "index.js",
+  "scripts": {
+    "test": "cmdtest",
+    "start": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bruzzesefabrizio/ML_Test.git"
+  },
+  "author": "Fabrizio Bruzzese",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bruzzesefabrizio/ML_Test/issues"
+  },
+  "homepage": "https://github.com/bruzzesefabrizio/ML_Test#readme",
+  "devDependencies": {
+    "nodemon": "^1.18.9"
+  },
+  "dependencies": {
+    "express": "^4.16.4"
+  }
+}
