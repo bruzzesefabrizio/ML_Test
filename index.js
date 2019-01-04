@@ -1,8 +1,8 @@
 var express = require('express');
 var bodyParser = require('body-parser');
-var {translate2Human} = require ('./controller');
-var {decodeBits2Morse} = require ('./controller');
-var {translate2Morse} = require ('./controller');
+var {translate2Human} = require ('./api/controllers/todoListController');
+var {decodeBits2Morse} = require ('./api/controllers/todoListController');
+var {translate2Morse} = require ('./api/controllers/todoListController');
 
 var app = express();
 
@@ -30,5 +30,5 @@ app.post('/translate/2text', function (req, res) {
 });
 
 app.listen(3000, function () {
-  console.log('Example app listening on port 3000!');
+  console.log('This should work!');
 });

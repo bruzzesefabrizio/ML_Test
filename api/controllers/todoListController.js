@@ -101,13 +101,14 @@ function translate2Human (message) {
         messageConverted.push(" ");
     });
      
-    console.log(messageConverted.join("")); 
+    console.log(messageConverted.join(""));
+    return messageConverted.join("");
 }
 
 function translate2Morse (message) {
 
     var messageConverted = [];
-
+    message = message.split('').join(' ');
     message.split("   ").map(function (word) {
         word.split(" ").map(function (letter) {
             messageConverted.push(humanToMorse[letter]);
@@ -115,7 +116,8 @@ function translate2Morse (message) {
         messageConverted.push(" ");
     });
      
-    console.log(messageConverted.join(" ")); 
+    console.log(messageConverted.join(" "));
+    return messageConverted.join(""); 
 }
 
 function decodeBits2Morse (message) {
@@ -129,7 +131,8 @@ function decodeBits2Morse (message) {
         messageConverted.push(" ");
     });
      
-    console.log(messageConverted.join("")); 
+    console.log(messageConverted.join(""));
+    return messageConverted.join(""); 
 }
 
 module.exports = {
