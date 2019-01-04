@@ -29,6 +29,19 @@ app.post('/translate/2text', function (req, res) {
   res.send(encodedResult);
 });
 
+app.post('/translate/2morse', function (req, res) {
+  var input = req.body.text;
+
+  var result = {
+    code: 200,
+    response: translate2Morse(input)
+  };
+
+  var encodedResult = JSON.stringify(result);
+
+  res.send(encodedResult);
+});
+
 app.listen(3000, function () {
   console.log('This should work!');
 });
